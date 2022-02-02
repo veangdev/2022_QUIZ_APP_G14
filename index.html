@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022-QUIZ-APP-G14</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container " id="home-page">
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <h1 class="page-title">2022-QUEZ-APP-G14</h1>
+        <div class="group-btn">
+            <button id="btnQuiz" class="btn-click">QUIZ</button>
+            <button id="btnCreate"class="btn-click">CREATE</button>
+        </div>
+        <ul class="item-center">
+            <li>Click <b>"CREATE"</b> to create quiz that you want</li>
+            <li>Click <b>"QUIZ"</b> to start to do the exercise in this website</li>
+        </ul>
+    </div>
+    <div class="container " id="add-question-page">
+        <div class="create-question">
+            <div class="title">
+                <button class="btn-back" id="btnBack">⇦</button>
+                <span class="btn-save">Save and play your quiz</span>
+            </div>
+        </div>
+        <input type="text" class="quiz-title" placeholder="Untitled quiz">
+        <form class="type-answer">
+            <input class="add-question" type="text" placeholder="Add your question...">
+            <select class="choice">
+                <option class="type-of-question" id="option1" value="radio">Multiple Choice</option>
+                <option class="type-of-question" id="option2" value="checkbox">Checkboxes</option>
+            </select>
+            <div class="input-answer">
+                <div class="input-group">
+                    <input type="radio" name="answer" class="type-of-input">
+                    <input type="text"class="answer" placeholder="answer1">
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="radio" name="answer" class="type-of-input">
+                    <input type="text"class="answer" placeholder="answer1">
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="radio" name="answer" class="type-of-input">
+                    <input type="text"class="answer" placeholder="answer1">
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="radio" name="answer" class="type-of-input">
+                    <input type="text"class="answer" placeholder="answer1">
+                </div>
+                <br>
+            </div>
+        </form>
+        <span class="create" id="create">CREATE</span>
+    </div>
+     <!-- ---------------Mutiplchoic Section------------------------ -->
+     <div class="quiz_Container">   
+        <div class="question_Discription">
+            <span>Questions :</span>
+            <span id="question_Number" style="color: red;"></span>
+        </div>
+        <div class="question_Title">
+            <P id="question_Add"></P>
+        </div>
+        <dive class="text-alert"><h2 id="alert"></h2></dive>
+        <div class="answer-Choice">   <!--Quiz Tamplate----->
+            <button class="btn" id="btn-1"></button>
+            <button class="btn" id="btn-2"></button>
+            <button class="btn" id="btn-3"></button>
+            <button class="btn" id="btn-4"></button>
+        </div> 
+    </div> 
+    <script src="js/main.js"></script>
+</body>
+</html>
